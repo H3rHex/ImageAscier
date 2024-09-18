@@ -1,3 +1,4 @@
+
 # Conversor de Imagen a Arte ASCII
 
 Este script convierte una imagen en arte ASCII utilizando caracteres. Es una herramienta sencilla que permite a los usuarios ingresar una imagen y generar una representación de texto de ella utilizando caracteres ASCII.
@@ -52,10 +53,42 @@ Se recomienda utilizar `venv` para crear un entorno virtual aislado para el proy
 
 ## Capturas
 
-Aquí te dejo algunos ejemplos de imágenes convertidas a arte ASCII utilizando este script:
+Aquí te dejo algunos ejemplo de imágenconvertid a arte ASCII utilizando este script:
 
-- **Ejemplo 1**
-- **Ejemplo 2**
+          ▓▓▓▓▓▓▓▓▓▓▓▓          
+        ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓        
+      ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓      
+     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓     
+    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓    
+   ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓   
+    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  
+  ▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  
+ ▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 
+ ▓▓▓▓▒▓▓▓▓▓▓▓▓                  
+▓▓▓▓▓ ▓▓▓▓▓▓  ▓▓▓█   ***********
+▓▓▓▓▓▓ ▓▓▓▓ ▓▓▓▓▓▓▓█ ***********
+▓▓▓▓▓▓ ▓▓▓ ▓▓▓▓▓▓▓▓▓▓ **********
+▓▓▓▓▓▓▓ ▓▓ ▓▓▓▓▓▓▓▓▓▓ **********
+▓▓▓▓▓▓▓ ▓ ▓▓▓▓▓▓▓▓▓▓▓▓ *********
+▓▓▓▓▓▓▓▓  ▓▓▓▓▓▓▓▓▓▓▓▓ *********
+▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓ *********
+▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓ *********
+▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓ **********
+▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓ **********
+▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓ ***********
+▓▓▓▓▓▓▓▓▓▓▓▓  ▓▓▓▓  #***********
+ ▓▓▓▓▓▓▓▓▓▓▓▓▓      *********** 
+ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ************ 
+  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ***********  
+  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ************  
+   ▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ***********   
+    ▓▓▓▓▓▓▓▓▓▓▓▓ ***********    
+     ▓▓▓▓▓▓▓▓▓▓ ***********     
+      █▓▓▓▓▓▓▓▓ *********+      
+        ▓▓▓▓▓▓ *********        
+          ▓▓▓▓ *******          
+
+
 
 ## Recomendaciones
 
@@ -68,7 +101,7 @@ Este script está licenciado bajo la Licencia MIT. Ver el archivo `LICENSE` para
 
 ## Autor
 
-[Tu nombre]
+HEREHK-DEV 
 
 ## Ejecución del script
 
