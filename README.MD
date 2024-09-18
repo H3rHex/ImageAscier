@@ -54,7 +54,7 @@ Se recomienda utilizar `venv` para crear un entorno virtual aislado para el proy
 ## Capturas
 
 Aquí te dejo algunos ejemplo de imágenconvertid a arte ASCII utilizando este script:
-
+"
           ▓▓▓▓▓▓▓▓▓▓▓▓          
         ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓        
       ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓      
@@ -89,7 +89,7 @@ Aquí te dejo algunos ejemplo de imágenconvertid a arte ASCII utilizando este s
           ▓▓▓▓ *******          
 
 
-
+"
 ## Recomendaciones
 
 - Para obtener los mejores resultados, utiliza imágenes con un tamaño de píxel moderado (por ejemplo, 400x400 píxeles). Las imágenes grandes pueden tardar mucho en procesarse y no producir resultados óptimos.
