@@ -39,7 +39,7 @@ ImageAscier-V2 es una herramienta en C++17 que convierte imágenes en arte ASCII
 ```bash
 sudo apt update
 sudo apt install libopencv-dev
-``
+```
 🇪🇸
 ```bash
 sudo apt update
