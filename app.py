@@ -7,7 +7,7 @@ class ImageProcessor:
         self.imagen = Image.open(image_path)
         self.resultado = ""
 
-    def generarImagen(self, thresholds):
+    def generateImage(self, thresholds):
         # Convertir la imagen a escala de grisas
         self.imagen = self.imagen.convert('L')
 
@@ -29,17 +29,17 @@ class ImageProcessor:
             self.resultado += "\n"
 
 
-    def copiarResultado(self):
+    def copyResolut(self):
         # Copiar el resultado al portapapeles
         pyperclip.copy(self.resultado)
-        print("El resultado ha sido copiado en el portapapeles")
+        print("The result has been copied to the clipboard.")
 
-    def resultadoEnArchivo(self, filename):
+    def resoultOnFile(self, filename):
         # Guardar el resultado en un archivo
         with open(filename, "w", encoding="utf-8") as f:
             f.write(self.resultado)
-        print("El resultado ha sido guardado en el archivo")
+        print("The result has been saved on file:")
     
-    def imprimirResultado(self):
+    def printResoult(self):
         # Imprimir el resultado en la consola
         print(self.resultado)
