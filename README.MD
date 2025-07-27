@@ -39,14 +39,13 @@ ImageAscier-V2 es una herramienta en C++17 que convierte imágenes en arte ASCII
 ```bash
 sudo apt update
 sudo apt install libopencv-dev
+``
 🇪🇸
-
-bash
-Copy
-Edit
+```bash
 sudo apt update
 sudo apt install libopencv-dev
 📦 Compile the Project · Compilar el proyecto
+```
 🇬🇧
 The project includes a build script that configures and compiles everything automatically.
 You can also use the provided precompiled binary if compatible.
@@ -55,21 +54,17 @@ You can also use the provided precompiled binary if compatible.
 El proyecto incluye un script que configura y compila todo automáticamente.
 También puedes usar el binario precompilado si es compatible.
 
-bash
-Copy
-Edit
+```bash
 chmod +x build.sh
 ./build.sh
+```
 Then run:
 
-bash
-Copy
-Edit
+```bash
 ./image_ascier_v2
+```
 📁 Project Structure · Estructura del proyecto
-pgsql
-Copy
-Edit
+```
 ImageAscier-V2/
 ├── SOURCE_CODE/
 │   ├── scr/                        # Main logic / Lógica principal
@@ -80,6 +75,7 @@ ImageAscier-V2/
 ├── build.sh                        # Build script / Script de compilación
 ├── CMakeLists.txt                  # CMake project file
 └── README.md                       # This file / Este archivo
+```
 🎨 Output Modes · Modos de salida
 🇬🇧
 
@@ -87,18 +83,12 @@ Console Output – Print ASCII art to terminal
 
 File Output – Save as output.txt
 
-Image Output – Export to AsciiImage.png (experimental)
-
 🇪🇸
 
 Salida por consola – Muestra el arte ASCII en la terminal
 
 Salida a archivo – Guarda como output.txt
 
-Salida como imagen – Exporta como AsciiImage.png (experimental)
-
-🛈 Image output may not fully preserve spacing due to OpenCV rendering limitations.
-🛈 La salida como imagen puede no respetar completamente los espacios debido a limitaciones del renderizado de OpenCV.
 
 🐞 Known Issues · Problemas conocidos
 🇬🇧
@@ -107,15 +97,12 @@ Only works on Linux
 
 Requires OpenCV installed system-wide
 
-Image output may not align ASCII characters perfectly
-
 🇪🇸
 
 Solo funciona en Linux
 
 Requiere OpenCV instalado en el sistema
 
-La imagen exportada puede no alinear los caracteres correctamente
 
 👤 Author · Autor
 Created by @H3rHex
