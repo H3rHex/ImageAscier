@@ -1,0 +1,25 @@
+// IMAGE ASCIER - C++
+
+## Project Structure
+
+- **BUILDS/**  
+  Contains platform-specific builds for Windows and Linux.
+
+- **SOURCE_CODE/**  
+  Contains all source code and headers.  
+  - **src/** → Core source code (.cpp files)  
+  - **includes/** → Header files and shared utilities
+
+## Modules and Dependencies
+
+- **OpenCV**  
+  Used for image loading and manipulation. Provides access to pixel data, color conversion, and resizing.
+
+- **OpenCL** *(planned for future)*  
+  GPU acceleration backend. Will be used to offload pixel-level operations to GPU for performance.
+
+## Standard Library Usage
+
+- `std::string` → String manipulation (ASCII output, filenames, etc.)
+- `std::iostream` → Input/Output handling (CLI interaction, logging, etc.)
+
