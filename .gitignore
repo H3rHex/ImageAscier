@@ -1,0 +1,5 @@
+cmake-build-debug
+builds/linux/CMakeFiles
+builds/linux/cmake_install.cmake
+builds/linux/CMakeCache.txt
+builds/linux/Makefile
