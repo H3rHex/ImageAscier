@@ -1,3 +1,0 @@
-/home/h3rhex/Development/C-C++/ImageAscier-V2/builds/linux/CMakeFiles/image_ascier_v2.dir
-/home/h3rhex/Development/C-C++/ImageAscier-V2/builds/linux/CMakeFiles/edit_cache.dir
-/home/h3rhex/Development/C-C++/ImageAscier-V2/builds/linux/CMakeFiles/rebuild_cache.dir
