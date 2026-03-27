@@ -7,13 +7,12 @@ set(CMAKE_CXX_STANDARD 17)
 find_package(OpenCV REQUIRED)
 
 include_directories(${OpenCV_INCLUDE_DIRS})
-include_directories(SOURCE_CODE/includes)
 
 add_executable(image_ascier_v2
-        SOURCE_CODE/scr/main.cpp
-        SOURCE_CODE/includes/ImageProcessor/imageProcessor.cpp
-        SOURCE_CODE/scr/main.h
-        SOURCE_CODE/includes/OutputModes/outputModes.cpp
+        scr/main.cpp
+        scr/ImageProcessor/imageProcessor.cpp
+        scr/main.h
+        scr/OutputModes/outputModes.cpp
 )
 
 target_link_libraries(image_ascier_v2 ${OpenCV_LIBS})

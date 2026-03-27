@@ -6,7 +6,14 @@ Mat loadImage(const string& imagePath) {
         if (image.empty()) {
             throw runtime_error("ERROR: Could not load image from " + imagePath);
         }
-        return image;
+
+        // Ancho objetivo en caracteres
+        int targetCols = 300; // ajusta según quieras
+        int targetRows = (int)(image.rows * targetCols / (float)image.cols * 0.5f); // *0.5 corrige el ratio
+
+        Mat resized;
+        resize(image, resized, Size(targetCols, targetRows));
+        return resized;
 
     } catch (const std::exception& e) {
         cerr << "ERROR: " << e.what() << endl;

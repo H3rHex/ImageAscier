@@ -1,118 +1,123 @@
-# 🖼️ ImageAscier-V2
+# ImageAscier-V2
 
-> 🇬🇧 Convert images to ASCII — fast and flexible  
-> 🇪🇸 Convierte imágenes a ASCII — rápido y flexible
+Convert images into ASCII art from the terminal.
 
----
+## Overview | Descripcion
 
-## 📜 Overview · Descripción
+**EN**  
+ImageAscier-V2 is a C++17 command-line tool that converts images into ASCII art using OpenCV.
+It supports three output modes:
+- Console output
+- Text file export (`.txt`)
+- Image export (`.png`)
 
-**🇬🇧**  
-ImageAscier-V2 is a C++17 tool that converts images into ASCII art. It supports multiple output modes: display in the terminal, export to a text file, and export as an image. It is Linux-only and relies on OpenCV for image handling.
+**ES**  
+ImageAscier-V2 es una herramienta de linea de comandos en C++17 que convierte imagenes en arte ASCII usando OpenCV.
+Soporta tres modos de salida:
+- Salida por consola
+- Exportacion a archivo de texto (`.txt`)
+- Exportacion a imagen (`.png`)
 
-**🇪🇸**  
-ImageAscier-V2 es una herramienta en C++17 que convierte imágenes en arte ASCII. Soporta varios modos de salida: mostrar en terminal, exportar a un archivo de texto y exportar como imagen. Funciona únicamente en Linux y depende de OpenCV.
+## Requirements | Requisitos
 
----
-
-## ⚙️ Requirements · Requisitos
-
-**🇬🇧**
-- Linux system
-- `cmake` (>= 3.10)
+**EN**
+- Linux
+- `cmake` 3.10+
 - `g++` with C++17 support
-- OpenCV (>= 4.0)
+- OpenCV 4+
+- OpenCV FreeType module (used for image output mode)
 
-**🇪🇸**
-- Sistema Linux
-- `cmake` (>= 3.10)
-- `g++` con soporte para C++17
-- OpenCV (>= 4.0)
+**ES**
+- Linux
+- `cmake` 3.10+
+- `g++` con soporte C++17
+- OpenCV 4+
+- Modulo FreeType de OpenCV (usado para el modo de salida en imagen)
 
----
+Ubuntu/Debian example:
 
-## 🚀 Getting Started · Primeros pasos
-
-### 🔧 Install Dependencies · Instalar dependencias
-
-**🇬🇧**
 ```bash
 sudo apt update
-sudo apt install libopencv-dev
+sudo apt install -y build-essential cmake libopencv-dev libopencv-contrib-dev
 ```
-🇪🇸
-```bash
-sudo apt update
-sudo apt install libopencv-dev
-📦 Compile the Project · Compilar el proyecto
-```
-🇬🇧
-The project includes a build script that configures and compiles everything automatically.
-You can also use the provided precompiled binary if compatible.
 
-🇪🇸
-El proyecto incluye un script que configura y compila todo automáticamente.
-También puedes usar el binario precompilado si es compatible.
+## Build and Run | Compilar y Ejecutar
+
+### Option 1: Build script (recommended) | Opcion 1: Script de build (recomendada)
+
+`build.sh` creates `builds/linux`, compiles in Release mode, and runs the program.
 
 ```bash
 chmod +x build.sh
 ./build.sh
 ```
-Then run:
+
+### Option 2: Manual CMake | Opcion 2: CMake manual
 
 ```bash
+mkdir -p builds/linux
+cd builds/linux
+cmake ../.. -DCMAKE_BUILD_TYPE=Release
+cmake --build .
 ./image_ascier_v2
 ```
-📁 Project Structure · Estructura del proyecto
+
+## Usage | Uso
+
+**EN**
+1. Enter the image path when prompted.
+2. Choose output mode:
+   - `1` Console
+   - `2` Text file
+   - `3` Image file
+3. For file/image modes, enter an output name (without extension).
+
+Generated files are saved in your `~/Downloads` directory.
+
+**ES**
+1. Ingresa la ruta de la imagen cuando el programa la solicite.
+2. Elige el modo de salida:
+   - `1` Consola
+   - `2` Archivo de texto
+   - `3` Archivo de imagen
+3. Para archivo/imagen, ingresa un nombre de salida (sin extension).
+
+Los archivos generados se guardan en `~/Downloads`.
+
+## Project Structure | Estructura del Proyecto
+
+```text
+ImageAscier/
+|-- scr/
+|   |-- main.cpp
+|   |-- main.h
+|   |-- ImageProcessor/
+|   |   |-- imageProcessor.cpp
+|   |   `-- imageProcessor.h
+|   `-- OutputModes/
+|       |-- outputModes.cpp
+|       `-- outputModes.h
+|-- build.sh
+|-- CMakeLists.txt
+`-- README.MD
 ```
-ImageAscier-V2/
-├── SOURCE_CODE/
-│   ├── scr/                        # Main logic / Lógica principal
-│   ├── includes/
-│   │   ├── ImageProcessor/         # ASCII conversion
-│   │   └── OutputModes/            # Output modes / Modos de salida
-├── image_ascier_v2                 # Precompiled binary / Binario precompilado
-├── build.sh                        # Build script / Script de compilación
-├── CMakeLists.txt                  # CMake project file
-└── README.md                       # This file / Este archivo
-```
-🎨 Output Modes · Modos de salida
-🇬🇧
 
-Console Output – Print ASCII art to terminal
+## Known Limitations | Limitaciones Conocidas
 
-File Output – Save as output.txt
+**EN**
+- Linux-oriented workflow.
+- Requires OpenCV installed on the system.
+- Image output depends on a local monospace font path (`DejaVuSansMono.ttf`).
 
-🇪🇸
+**ES**
+- Flujo orientado a Linux.
+- Requiere OpenCV instalado en el sistema.
+- La salida en imagen depende de una fuente monoespaciada local (`DejaVuSansMono.ttf`).
 
-Salida por consola – Muestra el arte ASCII en la terminal
+## Author | Autor
 
-Salida a archivo – Guarda como output.txt
+Created by `@H3rHex`.
 
+## License | Licencia
 
-🐞 Known Issues · Problemas conocidos
-🇬🇧
-
-Only works on Linux
-
-Requires OpenCV installed system-wide
-
-🇪🇸
-
-Solo funciona en Linux
-
-Requiere OpenCV instalado en el sistema
-
-
-👤 Author · Autor
-Created by @H3rHex
-
-📄 License · Licencia
-MIT License
-You are free to use, modify and distribute this project.
-
-Licencia MIT
-Eres libre de usar, modificar y distribuir este proyecto.
-
-
----
+This project is licensed under the GNU GENERAL PUBLIC LICENSE.

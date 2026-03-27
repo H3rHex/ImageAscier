@@ -4,8 +4,8 @@
 #include <iostream>
 #include <filesystem>
 #include <chrono>
-#include "../includes/OutputModes/outputModes.h"
-#include "../includes/ImageProcessor/imageProcessor.h"
+#include "./OutputModes/outputModes.h"
+#include "./ImageProcessor/imageProcessor.h"
 
 
 using namespace std;
@@ -19,6 +19,8 @@ inline const char* reset = "\033[0m";
 
 void prepareProgram();
 void outputOptionMenu(const string& image);
+void handleFileOutput(const string& outputString);
+void handleImageOutput(const string& outString);
 int main();
 
 inline int option = 0;
